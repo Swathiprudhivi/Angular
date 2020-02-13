@@ -1,0 +1,16 @@
+<div class="contianer">
+    <div class="form-group">
+        <label for="uname">User name</label>
+        <input type="text" [(ngModel)]="uname" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="pwd">Password</label>
+        <input type="password" [(ngModel)]="pwd" class="form-control">
+     </div>
+     <div clas=form-group>
+        <button (click)="Validate()" class="btn btn-primary">Login</button>
+    </div>
+    <div class="form-group">
+        <label class="text-error">{{errmsg}}</label>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<h1>Task Manager</h1>
+<div>
+    <table align="center">
+        <tr>
+            <td>Task:</td>
+            <td><input type="text" [(ngModel)]="name"></td>
+        </tr>
+        <tr>
+            <td>Priority:</td>
+            <td><input type="range" [(ngModel)]="priority"></td>
+        </tr>
+        <tr>
+            <td>Start Date:</td>
+            <td><input type="date"[(ngModel)]="sdate"></td>
+        </tr>
+        <tr>
+            <td>End Date:</td>
+            <td><input type="date"[(ngModel)]="edate"></td>
+        </tr>
+         <tr>
+             <button (click)="Addtask()" class="btn btn-primary">Add Task</button>
+             <button (click)="Reset()" class="btn btn-primary">Reset</button>
+        </tr>
+    </table>
+</div>

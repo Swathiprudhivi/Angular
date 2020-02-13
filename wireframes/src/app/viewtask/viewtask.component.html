@@ -1,0 +1,23 @@
+<h3>Task Manager</h3>
+<div>
+    <a [routerLink]="['/addtask']">Add Task</a>
+    <a [routerLink]="['/viewtask']">view Task</a>
+</div>
+<div class="container">
+<table align="center" border="1">
+
+    <tr>
+        <td>Task:</td>
+        <td>Priority:</td>
+        <td>Start Date:</td>
+        <td>End Date</td>
+    </tr>
+    <tr *ngFor="let li of lists">
+
+        <td>{{li.name}}</td>
+        <td>{{li.priority}}</td>
+        <td>{{li.sdate}}</td>
+        <td>{{li.edate}}</td>
+    </tr>
+</table>
+</div>
